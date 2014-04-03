@@ -1,0 +1,14 @@
+{
+  "name": "ember-datepicker",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "Date picker text field",
+  "dependencies": {
+    "kelonye/ember": "1.2.0",
+    "component/datepicker": "*"
+  },
+  "main": "lib/index.js",
+  "scripts": [
+    "lib/index.js"
+  ]
+}

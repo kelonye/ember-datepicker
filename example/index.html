@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <link href="../public/public.css" type="text/css" />
+</head>
+<body>
+  <section></section>
+  <script type='text/x-handlebars'>
+    {{view App.DatePickerView value=model.date}}
+    {{model.date}}
+  </script>
+  <script src='../public/public.js'></script>
+  <script>
+    var picker = require('ember-datepicker');
+    App = Em.Application.create();
+    App.ApplicationRoute = Em.Route.extend({
+      model: function(){
+        return Em.Object.create();
+      }
+    });
+    App.DatePickerView = Em.TextField.extend(picker);
+  </script>
+</body>
+</html>
